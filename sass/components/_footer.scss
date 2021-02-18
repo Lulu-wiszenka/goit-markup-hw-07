@@ -1,0 +1,114 @@
+/* ============ FOOTER ============ */
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--hero-background-color);
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+.footer-address-container {
+  margin-right: 70px;
+}
+
+.footer-logo-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: var(--text-white-color);
+  font-family: var(--text-logo-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+}
+
+.footer-contacts-list-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-contacts-link {
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--footer-link-color);
+
+  transition: color 250ms var(--hover-cubic);
+}
+
+.footer-contacts-link:hover,
+.footer-contacts-link:focus {
+  color: var(--accent-color-blue);
+}
+
+.footer-address {
+  width: 231px;
+  margin-bottom: 9px;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--text-white-color);
+}
+
+.footer-icon-container {
+  margin-right: 93px;
+}
+.footer-appeal {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--text-white-color);
+}
+
+.footer-social {
+  background-color: var(--footer-social-link-color);
+}
+
+.footer-form-container {
+  margin-left: auto;
+}
+
+.footer-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-form-input {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  padding: 14px 15px;
+
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  color: var(--text-white-color);
+}
+.footer-form-input::placeholder {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.button.footer-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 26px 8px 26px;
+}
+
+.footer-modal-icon {
+  margin-left: 10px;
+}
+
+/* ============ END FOOTER ============ */

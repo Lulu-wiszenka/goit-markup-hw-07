@@ -1,0 +1,47 @@
+/* ============ OUR CLIENTS ============ */
+
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-list {
+  display: flex;
+}
+
+.clients-item {
+  width: 170px;
+  height: 90px;
+}
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-item-link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--icon-social-color);
+  border-radius: 4px;
+
+  transition: border-color 250ms var(--hover-cubic);
+}
+
+.icon-clients {
+  fill: var(--icon-social-color);
+  transition: fill 250ms var(--hover-cubic);
+}
+
+.clients-item-link:hover,
+.clients-item-link:focus {
+  border: 1px solid var(--accent-color-blue);
+}
+
+.clients-item-link:hover .icon-clients,
+.clients-item-link:focus .icon-clients {
+  fill: var(--accent-color-blue);
+}
+
+/* ============ END OUR CLIENTS ============ */

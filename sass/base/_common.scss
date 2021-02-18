@@ -1,0 +1,36 @@
+body {
+  font-family: var(--text-main-font);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-customization {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link-customization {
+  text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}

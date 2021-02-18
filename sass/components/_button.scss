@@ -1,0 +1,23 @@
+.button {
+  display: block;
+  min-width: 200px;
+  padding: 8px 30px;
+
+  color: var(--text-white-color);
+  background-color: var(--accent-color-blue);
+  font-family: var(--text-main-font);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  cursor: pointer;
+  letter-spacing: 0.06em;
+  border: 2px solid transparent;
+  border-radius: 4px;
+
+  transition: background-color 250ms var(--hover-cubic);
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--hero-btn-hover);
+}

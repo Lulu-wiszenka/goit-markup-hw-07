@@ -1,0 +1,126 @@
+/* ============ HEADER ============ */
+.header {
+  height: 80px;
+  border-bottom: 1px solid var(--border-header);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo-link {
+  display: inline-block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  color: var(--color-head-link-title);
+  font-family: var(--text-logo-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.1925;
+  letter-spacing: 0.03em;
+}
+
+.logo-decoration {
+  color: var(--accent-color-blue);
+}
+
+.header-nav-list {
+  display: flex;
+  margin-left: 93px;
+}
+
+.header-nav-list-item:not(:last-child) {
+  position: relative;
+  margin-right: 50px;
+}
+
+.header-nav-link {
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 31px;
+
+  color: var(--color-head-link-title);
+  font-weight: 500;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+
+  transition: color 250ms var(--hover-cubic);
+}
+
+.header-nav-link:hover,
+.header-nav-link:focus,
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--accent-color-blue);
+}
+
+.header-nav-link.page {
+  color: var(--accent-color-blue);
+}
+
+.header-nav-link.page::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: "";
+
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color-blue);
+  border-radius: 2px;
+}
+
+.contacts-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.contacts-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts-link {
+  display: inline-flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 31px;
+
+  color: var(--main-text-color);
+  font-weight: 500;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  transition: color 250ms var(--hover-cubic);
+}
+
+.contacts-link:hover > .icon-header,
+.contacts-link:focus > .icon-header {
+  fill: var(--accent-color-blue);
+}
+
+.icon-header {
+  margin-right: 10px;
+  fill: var(--icon-header-color);
+  transition: fill 250ms var(--hover-cubic);
+}
+
+.icon-header.mail {
+  width: 16px;
+  height: 12px;
+}
+.icon-header.phone {
+  width: 12px;
+  height: 16px;
+}
+
+/* ============ END HEADER ============ */

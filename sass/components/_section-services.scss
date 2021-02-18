@@ -1,0 +1,56 @@
+/* ============ SERVICES ============ */
+.services {
+  padding-bottom: 94px;
+}
+
+.normal-title {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--color-head-link-title);
+}
+
+.services-list {
+  display: flex;
+}
+
+.services-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.thumb {
+  position: relative;
+  width: 370px;
+  height: 294px;
+}
+
+.services-list-img {
+  width: 100%;
+  height: 100%;
+}
+
+.thumb-text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  min-height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(47, 48, 58, 0.8);
+
+  font-weight: 700;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--text-white-color);
+}
+
+/* ============ END SERVICES ============ */

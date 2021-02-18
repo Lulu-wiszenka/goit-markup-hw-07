@@ -1,0 +1,23 @@
+// utils
+@import "./utils/variables";
+@import "./utils/visualli-hidden";
+
+// base
+@import "./base/common";
+
+// components
+@import "./components/button";
+@import "./components/header";
+@import "./components/section-hero";
+@import "./components/section-advantages";
+@import "./components/section-services";
+@import "./components/section-team";
+@import "./components/social-list";
+@import "./components/section-clients";
+@import "./components/footer";
+
+// PORTFOLIO
+@import "./components/main-portfolio";
+
+//  MODAL
+@import "./components/modal-form";
