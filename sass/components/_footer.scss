@@ -25,8 +25,10 @@
   letter-spacing: 0.03em;
 }
 
-.footer-contacts-list-item:not(:last-child) {
-  margin-bottom: 9px;
+.footer-contacts-list-item {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .footer-contacts-link {
@@ -36,11 +38,11 @@
   color: var(--footer-link-color);
 
   transition: color 250ms var(--hover-cubic);
-}
 
-.footer-contacts-link:hover,
-.footer-contacts-link:focus {
-  color: var(--accent-color-blue);
+  &:hover,
+  &:focus {
+    color: var(--accent-color-blue);
+  }
 }
 
 .footer-address {
@@ -90,21 +92,15 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   color: var(--text-white-color);
-}
-.footer-form-input::placeholder {
-  font-family: inherit;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
 
-  color: rgba(255, 255, 255, 0.6);
-}
+  &::placeholder {
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
 
-.button.footer-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 8px 26px 8px 26px;
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 
 .footer-modal-icon {

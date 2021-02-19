@@ -15,9 +15,22 @@
   border-radius: 4px;
 
   transition: background-color 250ms var(--hover-cubic);
-}
 
-.button:hover,
-.button:focus {
-  background-color: var(--hero-btn-hover);
+  &:hover,
+  &:focus {
+    background-color: var(--hero-btn-hover);
+  }
+
+  &.btn-hero,
+  &.modal-btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &.footer-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 26px 8px 26px;
+  }
 }

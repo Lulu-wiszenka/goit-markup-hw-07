@@ -8,15 +8,13 @@
   background-color: rgba(0, 0, 0, 0.2);
 
   opacity: 1;
-  transform: scale(1);
   transition: all 250ms var(--hover-cubic);
-}
 
-.backdrop.is-hidden {
-  visibility: hidden;
-  pointer-events: none;
-  opacity: 0;
-  transform: scale(0);
+  &.is-hidden {
+    visibility: hidden;
+    pointer-events: none;
+    opacity: 0;
+  }
 }
 
 .modal {
@@ -56,10 +54,11 @@
 .icon-close {
   fill: var(--just-black);
   transition: fill 250ms var(--hover-cubic);
-}
-.modal-close:hover .icon-close,
-.modal-close:focus .icon-close {
-  fill: var(--accent-color-blue);
+
+  .modal-close:hover &,
+  .modal-close:focus & {
+    fill: var(--accent-color-blue);
+  }
 }
 
 .modal-title {
@@ -80,6 +79,7 @@
   position: relative;
   margin-bottom: 10px;
 }
+
 .modal-label {
   display: block;
   margin-bottom: 4px;
@@ -97,6 +97,11 @@
   /* bottom: 34%;
   transform: translateY(50%); */
   transition: fill 250ms var(--hover-cubic);
+
+  .modal-input:hover + &,
+  .modal-input:focus + & {
+    fill: var(--accent-color-blue);
+  }
 }
 
 .modal-input {
@@ -106,23 +111,12 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border-color 250ms var(--hover-cubic);
-}
-input[type="email"]:not(:placeholder-shown):invalid {
-  border-color: red;
-}
-input[type="email"]:not(:placeholder-shown):invalid + .modal-icon {
-  fill: red;
-}
 
-.modal-input:hover,
-.modal-input:focus,
-.form-comment:focus {
-  outline: none;
-  border: 1px solid var(--accent-color-blue);
-}
-.modal-input:hover + .modal-icon,
-.modal-input:focus + .modal-icon {
-  fill: var(--accent-color-blue);
+  &:hover,
+  &:focus {
+    outline: none;
+    border: 1px solid var(--accent-color-blue);
+  }
 }
 
 .textarea-label {
@@ -146,15 +140,19 @@ input[type="email"]:not(:placeholder-shown):invalid + .modal-icon {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border-color 250ms var(--hover-cubic);
-}
 
-.form-comment::placeholder {
-  font-family: inherit;
-  font-size: inherit;
-  line-height: 16px;
-  letter-spacing: 0.01em;
+  &:focus {
+    outline: none;
+    border: 1px solid var(--accent-color-blue);
+  }
+  &::placeholder {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: 1.143;
+    letter-spacing: 0.01em;
 
-  color: rgba(117, 117, 117, 0.5);
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 
 .checkbox-label {
@@ -168,41 +166,41 @@ input[type="email"]:not(:placeholder-shown):invalid + .modal-icon {
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
-}
-.checkbox-label > a {
-  color: var(--accent-color-blue);
-}
-.checkbox-label::before {
-  content: "";
-  display: inline-block;
-  width: 16px;
-  height: 15px;
-  margin-right: 8px;
-  border: 2px solid var(--color-head-link-title);
-  border-radius: 2px;
-  transition: border-color 250ms var(--hover-cubic), background-color 250ms var(--hover-cubic);
-}
 
-input[type="checkbox"]:checked + .checkbox-label::before {
-  border-color: transparent;
-  background-color: var(--accent-color-blue);
-  background-image: url(../img/checked.svg);
-  background-size: cover;
-  background-origin: border-box;
-}
+  .consent-input:focus + &,
+  &:hover {
+    cursor: pointer;
+  }
 
-input[type="checkbox"]:focus + .checkbox-label::before {
-  outline: 1px solid var(--accent-color-blue);
-  cursor: pointer;
-}
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    margin-right: 8px;
+    border: 2px solid var(--color-head-link-title);
+    border-radius: 2px;
+    transition: border-color 250ms var(--hover-cubic), background-color 250ms var(--hover-cubic);
 
-.input[type="checkbox"]:focus + .checkbox-label,
-.checkbox-label:hover,
-.checkbox-label:hover::before {
-  cursor: pointer;
-}
+    &:hover {
+      cursor: pointer;
+    }
 
-.modal-btn {
-  margin-left: auto;
-  margin-right: auto;
+    .consent-input:checked + & {
+      border-color: transparent;
+      background-color: var(--accent-color-blue);
+      background-image: url(../img/checked.svg);
+      background-size: cover;
+      background-origin: border-box;
+    }
+
+    .consent-input:focus + & {
+      outline: 1px solid var(--accent-color-blue);
+      cursor: pointer;
+    }
+  }
+
+  & > a {
+    color: var(--accent-color-blue);
+  }
 }

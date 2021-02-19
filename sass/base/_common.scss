@@ -17,14 +17,27 @@ img {
   height: auto;
 }
 
-.list-customization {
+.list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.link-customization {
+.link {
   text-decoration: none;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &.services {
+    padding-top: 0;
+  }
+
+  &.team {
+    background-color: var(--background-grey-color);
+  }
 }
 
 .container {
@@ -33,4 +46,10 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.thumb {
+  position: relative;
+  width: 100%;
+  height: 294px;
 }

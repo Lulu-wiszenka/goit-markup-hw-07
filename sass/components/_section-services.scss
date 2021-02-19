@@ -1,7 +1,4 @@
 /* ============ SERVICES ============ */
-.services {
-  padding-bottom: 94px;
-}
 
 .normal-title {
   margin-bottom: 50px;
@@ -19,14 +16,11 @@
   display: flex;
 }
 
-.services-list-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.thumb {
-  position: relative;
+.services-list-item {
   width: 370px;
-  height: 294px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .services-list-img {
