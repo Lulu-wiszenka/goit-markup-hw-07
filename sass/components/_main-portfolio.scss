@@ -7,13 +7,16 @@
 /* ============ BUTTON-NAVIGATION ============ */
 
 .portfolio-nav-list {
-  display: flex;
-  justify-content: center;
+  @include flex($jc: center, $ai: stretch);
+  // display: flex;
+  // justify-content: center;
   margin-bottom: 50px;
 }
 
-.portfolio-nav-item:not(:last-child) {
-  margin-right: 8px;
+.portfolio-nav-item {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
 }
 
 .btn-portfolio {
@@ -28,8 +31,12 @@
   color: var(--color-head-link-title);
   background: var(--background-grey-color);
 
-  transition: background-color 250ms var(--hover-cubic), color 250ms var(--hover-cubic),
-    box-shadow 250ms var(--hover-cubic);
+  @include transition(background-color);
+  @include transition(color);
+  @include transition(box-shadow);
+  // transition: background-color 250ms var(--hover-cubic),
+  // color 250ms var(--hover-cubic),
+  //   box-shadow 250ms var(--hover-cubic);
 
   &:focus,
   &:hover {
@@ -63,7 +70,9 @@
   display: block;
   width: 100%;
   height: 404px;
-  transition: box-shadow 250ms var(--hover-cubic);
+
+  @include transition(box-shadow);
+  // transition: box-shadow 250ms var(--hover-cubic);
 
   &:hover,
   &:focus {
@@ -94,7 +103,8 @@
   letter-spacing: 0.03em;
   color: var(--text-white-color);
 
-  transition: transform 250ms var(--hover-cubic);
+  @include transition(transform);
+  // transition: transform 250ms var(--hover-cubic);
 
   .work-examples-link:hover &,
   .work-examples-link:focus & {
@@ -116,7 +126,3 @@
   line-height: 1.875;
   color: var(--main-text-color);
 }
-
-/* ============ END WORK EXAMPLES ============ */
-
-/* ============ END PORTFOLIO ============ */

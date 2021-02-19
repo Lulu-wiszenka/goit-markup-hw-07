@@ -7,22 +7,12 @@
 }
 
 .footer-container {
-  display: flex;
-  align-items: baseline;
+  @include flex($ai: baseline);
+  // display: flex;
+  // align-items: baseline;
 }
 .footer-address-container {
   margin-right: 70px;
-}
-
-.footer-logo-link {
-  display: inline-block;
-  margin-bottom: 20px;
-  color: var(--text-white-color);
-  font-family: var(--text-logo-font);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.192;
-  letter-spacing: 0.03em;
 }
 
 .footer-contacts-list-item {
@@ -37,7 +27,8 @@
   letter-spacing: 0.03em;
   color: var(--footer-link-color);
 
-  transition: color 250ms var(--hover-cubic);
+  @include transition(color);
+  // transition: color 250ms var(--hover-cubic);
 
   &:hover,
   &:focus {
@@ -54,10 +45,11 @@
 
   color: var(--text-white-color);
 }
-
+// Присоединяйтесь
 .footer-icon-container {
   margin-right: 93px;
 }
+
 .footer-appeal {
   margin-bottom: 20px;
   font-weight: 700;
@@ -69,18 +61,16 @@
   color: var(--text-white-color);
 }
 
-.footer-social {
-  background-color: var(--footer-social-link-color);
-}
-
+// Подпишитесь на рассылку
 .footer-form-container {
   margin-left: auto;
 }
 
 .footer-form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex($jc: center);
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
 }
 .footer-form-input {
   width: 358px;
@@ -106,5 +96,3 @@
 .footer-modal-icon {
   margin-left: 10px;
 }
-
-/* ============ END FOOTER ============ */
