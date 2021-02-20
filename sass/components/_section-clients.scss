@@ -4,7 +4,7 @@
   display: flex;
 }
 
-.clients-item {
+.clients-list__item {
   width: 170px;
   height: 90px;
 
@@ -13,7 +13,7 @@
   }
 }
 
-.clients-item-link {
+.clients-link {
   @include flex($jc: center);
   // display: flex;
   // justify-content: center;
@@ -34,14 +34,14 @@
   }
 }
 
-.icon-clients {
+.clients-link__icon {
   fill: var(--icon-social-color);
 
   @include transition(fill);
   // transition: fill 250ms var(--hover-cubic);
 
-  .clients-item-link:hover &,
-  .clients-item-link:focus & {
+  .clients-link:hover &,
+  .clients-link:focus & {
     fill: var(--accent-color-blue);
   }
 }

@@ -6,20 +6,18 @@
 }
 /* ============ BUTTON-NAVIGATION ============ */
 
-.portfolio-nav-list {
+.portfolio-nav {
   @include flex($jc: center, $ai: stretch);
-  // display: flex;
-  // justify-content: center;
   margin-bottom: 50px;
 }
 
-.portfolio-nav-item {
+.portfolio-nav__item {
   &:not(:last-child) {
     margin-right: 8px;
   }
 }
 
-.btn-portfolio {
+.portfolio-nav__btn {
   display: inline-block;
   min-width: 73px;
   padding: 4px 20px;
@@ -34,9 +32,6 @@
   @include transition(background-color);
   @include transition(color);
   @include transition(box-shadow);
-  // transition: background-color 250ms var(--hover-cubic),
-  // color 250ms var(--hover-cubic),
-  //   box-shadow 250ms var(--hover-cubic);
 
   &:focus,
   &:hover {
@@ -49,24 +44,23 @@
   }
 }
 
-/* ============ END BUTTON-NAVIGATION ============ */
 /* ============ WORK EXAMPLES ============ */
 
-.work-examples-list {
+.work-list {
   margin-right: calc(-1 * var(--card-set-gap));
   margin-bottom: calc(-1 * var(--card-set-gap));
   display: flex;
   flex-wrap: wrap;
 }
 
-.work-examples-item {
+.work-list__item {
   flex-basis: calc(100% / 3 - var(--card-set-gap));
   margin-right: var(--card-set-gap);
   margin-bottom: var(--card-set-gap);
   border: 1px solid var(--work-examples-border);
 }
 
-.work-examples-link {
+.work-examples-card {
   display: block;
   width: 100%;
   height: 404px;
@@ -74,20 +68,15 @@
   @include transition(box-shadow);
   // transition: box-shadow 250ms var(--hover-cubic);
 
+  & > .thumb {
+    overflow: hidden;
+  }
+
   &:hover,
   &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
-}
-
-.img-description {
-  width: 100%;
-  padding: 20px 24px;
-}
-
-.work-examples-link > .thumb {
-  overflow: hidden;
 }
 
 .hover-text {
@@ -106,13 +95,18 @@
   @include transition(transform);
   // transition: transform 250ms var(--hover-cubic);
 
-  .work-examples-link:hover &,
-  .work-examples-link:focus & {
+  .work-examples-card:hover &,
+  .work-examples-card:focus & {
     transform: translateY(0);
   }
 }
 
-.work-examples-title {
+.img-description {
+  width: 100%;
+  padding: 20px 24px;
+}
+
+.img-description__title {
   margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
@@ -121,7 +115,7 @@
   color: var(--color-head-link-title);
 }
 
-.work-examples-text {
+.img-description__text {
   font-size: 16px;
   line-height: 1.875;
   color: var(--main-text-color);

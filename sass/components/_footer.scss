@@ -4,24 +4,41 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--hero-background-color);
+
+  & > .container {
+    @include flex($ai: baseline);
+  }
+
+  & .contacts-box {
+    margin-right: 70px;
+  }
+
+  & .social-box {
+    margin-right: 93px;
+  }
+
+  & .form-box {
+    margin-left: auto;
+  }
 }
 
-.footer-container {
-  @include flex($ai: baseline);
-  // display: flex;
-  // align-items: baseline;
-}
-.footer-address-container {
-  margin-right: 70px;
+.footer-contacts__address {
+  width: 231px;
+  margin-bottom: 9px;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--text-white-color);
 }
 
-.footer-contacts-list-item {
+.footer-contacts-list__item {
   &:not(:last-child) {
     margin-bottom: 9px;
   }
 }
 
-.footer-contacts-link {
+.footer-contacts__link {
   font-style: normal;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -36,19 +53,7 @@
   }
 }
 
-.footer-address {
-  width: 231px;
-  margin-bottom: 9px;
-  font-style: normal;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-
-  color: var(--text-white-color);
-}
 // Присоединяйтесь
-.footer-icon-container {
-  margin-right: 93px;
-}
 
 .footer-appeal {
   margin-bottom: 20px;
@@ -62,17 +67,12 @@
 }
 
 // Подпишитесь на рассылку
-.footer-form-container {
-  margin-left: auto;
-}
 
 .footer-form {
   @include flex($jc: center);
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
 }
-.footer-form-input {
+
+.footer-form__input {
   width: 358px;
   height: 50px;
   margin-right: 12px;
@@ -93,6 +93,6 @@
   }
 }
 
-.footer-modal-icon {
+.footer-form__icon {
   margin-left: 10px;
 }

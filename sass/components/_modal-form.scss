@@ -44,9 +44,6 @@
   margin: 0;
 
   @include flex($jc: center);
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
 
   background-color: var(--text-white-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -54,7 +51,7 @@
   cursor: pointer;
 }
 
-.icon-close {
+.modal-close__icon {
   fill: var(--just-black);
 
   @include transition(fill);
@@ -66,7 +63,7 @@
   }
 }
 
-.modal-title {
+.modal__title {
   margin-bottom: 12px;
 
   font-weight: 700;
@@ -78,14 +75,14 @@
   color: var(--color-head-link-title);
 }
 
-.modal-form-container {
+.modal-form__box {
   /*display: flex;
   flex-direction: column;*/
   position: relative;
   margin-bottom: 10px;
 }
 
-.modal-label {
+.modal-form__label {
   display: block;
   margin-bottom: 4px;
   font-size: 12px;
@@ -95,7 +92,7 @@
   color: var(--icon-header-color);
 }
 
-.modal-icon {
+.modal-form__icon {
   position: absolute;
   left: 12px;
   bottom: 11px;
@@ -103,15 +100,14 @@
   transform: translateY(50%); */
 
   @include transition(fill);
-  // transition: fill 250ms var(--hover-cubic);
 
-  .modal-input:hover + &,
-  .modal-input:focus + & {
+  .modal-form__input:hover + &,
+  .modal-form__input:focus + & {
     fill: var(--accent-color-blue);
   }
 }
 
-.modal-input {
+.modal-form__input {
   width: 100%;
   height: 40px;
   padding: 12px 12px 12px 42px;
@@ -119,7 +115,6 @@
   border-radius: 4px;
 
   @include transition(border-color);
-  // transition: border-color 250ms var(--hover-cubic);
 
   &:hover,
   &:focus {
@@ -128,6 +123,7 @@
   }
 }
 
+//comment
 .textarea-label {
   display: flex;
   flex-direction: column;
@@ -140,7 +136,7 @@
   color: var(--icon-header-color);
 }
 
-.form-comment {
+.comment {
   width: 100%;
   height: 120px;
   padding: 11px 16px 11px 16px;
@@ -168,9 +164,6 @@
 
 .checkbox-label {
   @include flex($jc: center);
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
   flex-wrap: wrap;
 
   margin-bottom: 30px;
@@ -195,8 +188,6 @@
 
     @include transition(border-color);
     @include transition(background-color);
-    // transition: border-color 250ms var(--hover-cubic),
-    // background-color 250ms var(--hover-cubic);
 
     &:hover {
       cursor: pointer;

@@ -1,22 +1,10 @@
 /* ============ SERVICES ============ */
 
-.normal-title {
-  margin-bottom: 50px;
-
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.167;
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: var(--color-head-link-title);
-}
-
 .services-list {
   display: flex;
 }
 
-.services-list-item {
+.services-list__item {
   width: 370px;
 
   &:not(:last-child) {
@@ -24,12 +12,12 @@
   }
 }
 
-.services-list-img {
+.thumb__img {
   width: 100%;
   height: 100%;
 }
 
-.thumb-text {
+.thumb__text {
   position: absolute;
   left: 0;
   bottom: 0;

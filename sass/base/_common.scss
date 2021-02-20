@@ -48,6 +48,18 @@ img {
   padding-right: 15px;
 }
 
+.title {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--color-head-link-title);
+}
+
 .thumb {
   position: relative;
   width: 100%;

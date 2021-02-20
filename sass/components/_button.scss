@@ -17,17 +17,14 @@
 
   @include transition(background-color);
 
-  &.btn-hero,
-  &.modal-btn {
+  &.hero__btn,
+  &.modal-form__btn {
     margin-left: auto;
     margin-right: auto;
   }
 
-  &.footer-btn {
+  &.footer-form__btn {
     @include flex($jc: center);
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
     padding: 8px 26px 8px 26px;
   }
 

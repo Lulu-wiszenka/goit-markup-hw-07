@@ -20,30 +20,32 @@
       <div class="container">
         <nav class="navigation">
           <a class="logo header-logo link" href="./"
-            ><span lang="en" class="logo-decoration">Web</span> Studio</a
+            ><span lang="en" class="logo__decor">Web</span> Studio</a
           >
-          <ul class="header-nav-list list">
-            <li class="header-nav-list-item">
-              <a class="header-nav-link link" href="./index.html">Студия</a>
+          <ul class="nav-list list">
+            <li class="nav-list__item">
+              <a class="navigation__link link" href="./index.html">Студия</a>
             </li>
-            <li class="header-nav-list-item">
-              <a class="header-nav-link page link" href="./">Портфолио</a>
+            <li class="nav-list__item">
+              <a class="navigation__link page link" href="./">Портфолио</a>
             </li>
-            <li class="header-nav-list-item">
-              <a class="header-nav-link link" href="">Контакты</a>
+            <li class="nav-list__item">
+              <a class="navigation__link link" href="">Контакты</a>
             </li>
           </ul>
         </nav>
-        <ul class="contacts-list list">
-          <li class="contacts-item">
-            <a class="contacts-link link" href="mailto:info@devstudio.com">
-              <svg class="icon-header mail"><use href="./img/sprit-icon.svg#icon-mail"></use></svg>
+        <ul class="contacts list">
+          <li class="contacts__item">
+            <a class="contacts__link link" href="mailto:info@devstudio.com">
+              <svg class="contacts__icon mail">
+                <use href="./img/sprit-icon.svg#icon-mail"></use>
+              </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="contacts-item">
-            <a class="contacts-link link" href="tel:+380961111111"
-              ><svg class="icon-header phone">
+          <li class="contacts__item">
+            <a class="contacts__link link" href="tel:+380961111111"
+              ><svg class="contacts__icon phone">
                 <use href="./img/sprit-icon.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11
@@ -52,41 +54,45 @@
         </ul>
       </div>
     </header>
+
     <main class="page-portfolio">
       <!-- ============ PORFOLIO ============ -->
+
       <section class="portfolio">
         <h1 class="visualli-hidden">Портфолио</h1>
+
         <div class="container">
-          <ul class="portfolio-nav-list list">
-            <li class="portfolio-nav-item">
-              <button class="btn-portfolio button" type="button">Все</button>
+          <ul class="portfolio-nav list">
+            <li class="portfolio-nav__item">
+              <button class="portfolio-nav__btn button" type="button">Все</button>
             </li>
-            <li class="portfolio-nav-item">
-              <button class="btn-portfolio button" type="button">Веб-сайты</button>
+            <li class="portfolio-nav__item">
+              <button class="portfolio-nav__btn button" type="button">Веб-сайты</button>
             </li>
-            <li class="portfolio-nav-item">
-              <button class="btn-portfolio button" type="button">Приложения</button>
+            <li class="portfolio-nav__item">
+              <button class="portfolio-nav__btn button" type="button">Приложения</button>
             </li>
-            <li class="portfolio-nav-item">
-              <button class="btn-portfolio button" type="button">Дизайн</button>
+            <li class="portfolio-nav__item">
+              <button class="portfolio-nav__btn button" type="button">Дизайн</button>
             </li>
-            <li class="portfolio-nav-item">
-              <button class="btn-portfolio button" type="button">Маркетинг</button>
+            <li class="portfolio-nav__item">
+              <button class="portfolio-nav__btn button" type="button">Маркетинг</button>
             </li>
           </ul>
 
-          <div class="examples-list">
+          <!-- ============ WORK EXAMPLES ============ -->
+
+          <div class="work-examples-box">
             <h2 class="visualli-hidden">Примеры работ</h2>
-            <ul class="work-examples-list list">
-              <li class="work-examples-item">
-                <a class="work-examples-link link" href="">
+            <ul class="work-list list">
+              <li class="work-list__item">
+                <a class="work-examples-card link" href="">
                   <div class="thumb">
                     <img
-                      class="work-examples-img"
+                      class="work-examples-card__img"
                       src="./img/portfolio/tehnokriak.jpg"
                       alt="Страница сайта"
                     />
-
                     <p class="hover-text">
                       Технокряк это современная площадка распространения коронавируса. Компании
                       используют эту платформу для цифрового шпионажа и атак на защищённые сервера
@@ -94,16 +100,16 @@
                     </p>
                   </div>
                   <div class="img-description">
-                    <h3 class="work-examples-title">Технокряк</h3>
-                    <p class="work-examples-text">Веб-сайт</p>
+                    <h3 class="img-description__title">Технокряк</h3>
+                    <p class="img-description__text">Веб-сайт</p>
                   </div>
                 </a>
               </li>
-              <li class="work-examples-item">
-                <a class="work-examples-link link" href="">
+              <li class="work-list__item">
+                <a class="work-examples-card link" href="">
                   <div class="thumb">
                     <img
-                      class="work-examples-img"
+                      class="work-examples-card__img"
                       src="./img/portfolio/poster.jpg"
                       alt="Игра в баскетбол"
                     />
@@ -115,18 +121,18 @@
                     </p>
                   </div>
                   <div class="img-description">
-                    <h3 class="work-examples-title">
+                    <h3 class="img-description__title">
                       Постер <span lang="en">New Orlean vs Golden Star</span>
                     </h3>
-                    <p class="work-examples-text">Дизайн</p>
+                    <p class="img-description__text">Дизайн</p>
                   </div>
                 </a>
               </li>
-              <li class="work-examples-item">
-                <a class="work-examples-link link" href="">
+              <li class="work-list__item">
+                <a class="work-examples-card link" href="">
                   <div class="thumb">
                     <img
-                      class="work-examples-img"
+                      class="work-examples-card__img"
                       src="./img/portfolio/restourant.jpg"
                       alt="Рыба - логотип ресторана"
                     />
@@ -138,15 +144,19 @@
                     </p>
                   </div>
                   <div class="img-description">
-                    <h3 class="work-examples-title">Ресторан <span lang="en">Seafood</span></h3>
-                    <p class="work-examples-text">Приложение</p>
+                    <h3 class="img-description__title">Ресторан <span lang="en">Seafood</span></h3>
+                    <p class="img-description__text">Приложение</p>
                   </div>
                 </a>
               </li>
-              <li class="work-examples-item">
-                <a class="work-examples-link link" href="">
+              <li class="work-list__item">
+                <a class="work-examples-card link" href="">
                   <div class="thumb">
-                    <img class="work-examples-img" src="./img/portfolio/prime.jpg" alt="Наушники" />
+                    <img
+                      class="work-examples-card__img"
+                      src="./img/portfolio/prime.jpg"
+                      alt="Наушники"
+                    />
 
                     <p class="hover-text">
                       Технокряк это современная площадка распространения коронавируса. Компании
@@ -155,16 +165,16 @@
                     </p>
                   </div>
                   <div class="img-description">
-                    <h3 class="work-examples-title">Проект <span lang="en">Prime</span></h3>
-                    <p class="work-examples-text">Маркетинг</p>
+                    <h3 class="img-description__title">Проект <span lang="en">Prime</span></h3>
+                    <p class="img-description__text">Маркетинг</p>
                   </div>
                 </a>
               </li>
-              <li class="work-examples-item">
-                <a class="work-examples-link link" href="">
+              <li class="work-list__item">
+                <a class="work-examples-card link" href="">
                   <div class="thumb">
                     <img
-                      class="work-examples-img"
+                      class="work-examples-card__img"
                       src="./img/portfolio/boxes.jpg"
                       alt="Две коробки"
                     />
@@ -176,16 +186,16 @@
                     </p>
                   </div>
                   <div class="img-description">
-                    <h3 class="work-examples-title">Проект <span lang="en">Boxes</span></h3>
-                    <p class="work-examples-text">Приложение</p>
+                    <h3 class="img-description__title">Проект <span lang="en">Boxes</span></h3>
+                    <p class="img-description__text">Приложение</p>
                   </div>
                 </a>
               </li>
-              <li class="work-examples-item">
-                <a class="work-examples-link link" href="">
+              <li class="work-list__item">
+                <a class="work-examples-card link" href="">
                   <div class="thumb">
                     <img
-                      class="work-examples-img"
+                      class="work-examples-card__img"
                       src="./img/portfolio/inspiration.jpg"
                       alt="Страница сайта"
                     />
@@ -197,16 +207,16 @@
                     </p>
                   </div>
                   <div class="img-description">
-                    <h3 class="work-examples-title" lang="en">Inspiration has no Borders</h3>
-                    <p class="work-examples-text">Веб-сайт</p>
+                    <h3 class="img-description__title" lang="en">Inspiration has no Borders</h3>
+                    <p class="img-description__text">Веб-сайт</p>
                   </div>
                 </a>
               </li>
-              <li class="work-examples-item">
-                <a class="work-examples-link link" href="">
+              <li class="work-list__item">
+                <a class="work-examples-card link" href="">
                   <div class="thumb">
                     <img
-                      class="work-examples-img"
+                      class="work-examples-card__img"
                       src="./img/portfolio/edition.jpg"
                       alt="Разворот журнала"
                     />
@@ -218,17 +228,21 @@
                     </p>
                   </div>
                   <div class="img-description">
-                    <h3 class="work-examples-title">
+                    <h3 class="img-description__title">
                       Издание <span lang="en">Limited Edition</span>
                     </h3>
-                    <p class="work-examples-text">Дизайн</p>
+                    <p class="img-description__text">Дизайн</p>
                   </div>
                 </a>
               </li>
-              <li class="work-examples-item">
-                <a class="work-examples-link link" href="">
+              <li class="work-list__item">
+                <a class="work-examples-card link" href="">
                   <div class="thumb">
-                    <img class="work-examples-img" src="./img/portfolio/lab.jpg" alt="Бирка" />
+                    <img
+                      class="work-examples-card__img"
+                      src="./img/portfolio/lab.jpg"
+                      alt="Бирка"
+                    />
 
                     <p class="hover-text">
                       Технокряк это современная площадка распространения коронавируса. Компании
@@ -237,16 +251,16 @@
                     </p>
                   </div>
                   <div class="img-description">
-                    <h3 class="work-examples-title">Проект <span lang="en">LAB</span></h3>
-                    <p class="work-examples-text">Маркетинг</p>
+                    <h3 class="img-description__title">Проект <span lang="en">LAB</span></h3>
+                    <p class="img-description__text">Маркетинг</p>
                   </div>
                 </a>
               </li>
-              <li class="work-examples-item">
-                <a class="work-examples-link link" href="">
+              <li class="work-list__item">
+                <a class="work-examples-card link" href="">
                   <div class="thumb">
                     <img
-                      class="work-examples-img"
+                      class="work-examples-card__img"
                       src="./img/portfolio/business.jpg"
                       alt="Приложение открытое на ноутбуке"
                     />
@@ -258,8 +272,8 @@
                     </p>
                   </div>
                   <div class="img-description">
-                    <h3 class="work-examples-title" lang="en">Growing Business</h3>
-                    <p class="work-examples-text">Приложение</p>
+                    <h3 class="img-description__title" lang="en">Growing Business</h3>
+                    <p class="img-description__text">Приложение</p>
                   </div>
                 </a>
               </li>
@@ -269,72 +283,71 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container footer-container">
-        <div class="footer-address-container">
+      <div class="container">
+        <div class="contacts-box">
           <a class="logo footer-logo link" href="./"
-            ><span lang="en" class="logo-decoration">Web</span> Studio
+            ><span lang="en" class="logo__decor">Web</span> Studio
           </a>
           <address class="footer-contacts">
-            <p class="footer-address">г. Киев, пр-т Леси Украинки, 26</p>
+            <p class="footer-contacts__address">г. Киев, пр-т Леси Украинки, 26</p>
             <ul class="footer-contacts-list list">
-              <li class="footer-contacts-list-item">
-                <a class="footer-contacts-link link" href="mailto:info@example.com"
+              <li class="footer-contacts-list__item">
+                <a class="footer-contacts__link link" href="mailto:info@example.com"
                   >info@example.com
                 </a>
               </li>
-              <li class="footer-contacts-list-item">
-                <a class="footer-contacts-link link" href="tel:+380961111111">+38 099 111 11 11</a>
+              <li class="footer-contacts-list__item">
+                <a class="footer-contacts__link link" href="tel:+380961111111">+38 099 111 11 11</a>
               </li>
             </ul>
           </address>
         </div>
-        <div class="footer-icon-container">
+        <div class="social-box">
           <p class="footer-appeal">Присоединяйтесь</p>
-          <ul class="social-list-icon list">
-            <li class="social-item-icon">
-              <a class="social-link footer-social" href=""
-                ><svg class="icon-social">
+          <ul class="social list">
+            <li class="social__item">
+              <a class="social__link footer-social" href=""
+                ><svg class="social__icon">
                   <use href="./img/sprit-icon.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-item-icon">
-              <a class="social-link footer-social" href=""
-                ><svg class="icon-social">
+            <li class="social__item">
+              <a class="social__link footer-social" href=""
+                ><svg class="social__icon">
                   <use href="./img/sprit-icon.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-item-icon">
-              <a class="social-link footer-social" href=""
-                ><svg class="icon-social">
+            <li class="social__item">
+              <a class="social__link footer-social" href=""
+                ><svg class="social__icon">
                   <use href="./img/sprit-icon.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-item-icon">
-              <a class="social-link footer-social" href=""
-                ><svg class="icon-social">
+            <li class="social__item">
+              <a class="social__link footer-social" href=""
+                ><svg class="social__icon">
                   <use href="./img/sprit-icon.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <div class="footer-modal-container">
+        <div class="form-box">
           <p class="footer-appeal">Подпишитесь на рассылку</p>
           <form class="footer-form">
             <input
-              class="footer-form-input"
+              class="footer-form__input"
               name="email"
               type="email"
               placeholder="E-mail"
               required
-              autocomplete="email"
             />
-            <button class="button footer-btn" type="submit">
+            <button class="button footer-form__btn" type="submit">
               Подписаться
-              <svg class="footer-modal-icon" width="24" height="24">
+              <svg class="footer-form__icon" width="24" height="24">
                 <use href="./img/sprit-icon.svg#icon-footer-send"></use>
               </svg>
             </button>
