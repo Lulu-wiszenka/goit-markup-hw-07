@@ -103,6 +103,11 @@
   @include transition(fill);
   // transition: fill 250ms var(--hover-cubic);
 
+  .contacts__link:hover > &,
+  .contacts__link:focus > & {
+    fill: var(--accent-color-blue);
+  }
+
   &.mail {
     width: 16px;
     height: 12px;
@@ -110,10 +115,5 @@
   &.phone {
     width: 12px;
     height: 16px;
-  }
-
-  .contacts-link:hover > &,
-  .contacts-link:focus > & {
-    fill: var(--accent-color-blue);
   }
 }

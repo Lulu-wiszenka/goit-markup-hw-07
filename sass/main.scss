@@ -1,26 +1,11 @@
 // utils
-@import "./utils/variables";
-@import "./utils/visualli-hidden";
-@import "./utils/mixins";
+@import "./utils/main-utils";
 
 // base
 @import "./base/common";
 
-// components
-@import "./components/logo";
-@import "./components/button";
-@import "./components/social-list";
-
-@import "./components/header";
-@import "./components/section-hero";
-@import "./components/section-advantages";
-@import "./components/section-services";
-@import "./components/section-team";
-@import "./components/section-clients";
-@import "./components/footer";
+// STUDIA
+@import "./components/main-studia";
 
 // PORTFOLIO
 @import "./components/main-portfolio";
-
-//  MODAL
-@import "./components/modal-form";
